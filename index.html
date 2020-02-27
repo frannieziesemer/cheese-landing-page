@@ -10,36 +10,117 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src\images\style.css" />
     <title>C'est Cheese</title>
   </head>
   <body>
-    <div id="home" class="jumbotron">
+    <div id="home" class="jumbotron mb-2 bg-dark text-white">
       <div class="row">
         <div class="col-md-12 text-center">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+              <img
+                src="src\images\cestcheese black background.PNG"
+                width="40"
+                height="40"
+                alt=""
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <a class="navbar-brand" href="#">
+              <img
+                src="C:\Users\frann\OneDrive\Documents\C'estChesse\cheese-landing-page\src\images\fbLogo.png"
+                width="40"
+                height="40"
+                alt="facebook logo"
+              />
+            </a>
+            <a class="navbar-brand" href="#">
+              <img
+                src="C:\Users\frann\OneDrive\Documents\C'estChesse\cheese-landing-page\src\images\Instagram_AppIcon_Aug2017.png"
+                width="40"
+                height="40"
+                alt="instgram logo"
+              />
+            </a>
+          </nav>
           <img
+            class="img-fluid logo"
             src="src\images\cestcheese black background.PNG"
             alt="c'est cheese logo"
           />
-          <h3>
+          <h1 class="tagline">
             C'est Cheese, French for `it is cheese` [ c'est - pronounced say ]
-          </h3>
+          </h1>
+
+          <!-- <nav class="navbar fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+              <img
+                src="src\images\cestcheese black background.PNG"
+                width="40"
+                height="40"
+                alt=""
+              />
+            </a>
+          </nav> -->
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       <div id="about" class="row">
-        <p>
-          We are a food trailer based in Western Queensland, specialising in
-          gourmet cheese from Australia and around the world
-        </p>
+        <div class="col-12">
+          <h2 class="text-center">
+            We are a food trailer based in Western Queensland, specialising in
+            gourmet cheese from Australia and around the world
+          </h2>
+        </div>
         <div class="col-md-4">
+          <img
+            src="src\images\raclette.jpg"
+            alt="melted raclette cheese"
+            class="img-fluid aboutSectionPhotos"
+          />
           <h3>Raclette</h3>
           <p>
             Next level grilled cheese , just how the Swiss do it!
           </p>
         </div>
         <div class="col-md-4">
+          <img
+            src="src\images\cheese.png"
+            alt="two types of cheese"
+            class="img-fluid aboutSectionPhotos"
+          />
           <h3>Fresh cheese</h3>
           <p>
             Many types of fresh Australian and international cheese, the perfect
@@ -47,6 +128,11 @@
           </p>
         </div>
         <div class="col-md-4">
+          <img
+            src="src\images\cheeseboard.png"
+            alt="cheese board"
+            class="img-fluid aboutSectionPhotos"
+          />
           <h3>And more..</h3>
           <p>
             Local olives, quince paste, French crips and more to pair perfectly
@@ -54,17 +140,18 @@
           </p>
         </div>
       </div>
-      <h5>
+      <h5 class="centeredText">
         Find us at Thomas Jack Park, Dalby QLD from 3pm most Fridays
       </h5>
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row aboutTed">
+        <div class="col-md-6 rounded">
           <img
             src="src\images\ted.PNG"
-            alt="serving customers cheese from the van"
+            alt="woman serving customers cheese from the van"
+            class="img-fluid vanWithCustomers"
           />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 paragraphAboutTed">
           <p>
             I am Teddie Ziesemer, pharmacist by trade, cheese lover by nature!
           </p>
@@ -76,8 +163,10 @@
         </div>
       </div>
       <div id="events" class="row">
-        <div class="col-md-6 text-right">
-          <h3>We also do events, markets and private functions</h3>
+        <div class="col-md-6 text-right ">
+          <h3 class="eventsTextHeading">
+            We also do events, markets and private functions
+          </h3>
           <p>
             C'est Cheese is on wheels and ready to come to you wherever you may
             be.
@@ -87,6 +176,7 @@
           <img
             src="src\images\event shot.PNG"
             alt="ariel view of a function on green grass with tents people and food trucks"
+            class=" img-fluid"
           />
         </div>
       </div>
@@ -95,7 +185,7 @@
           <img src="src\images\map.PNG" class="img-fluid" alt="map" />
         </div>
         <div class="col-md-6">
-          <h4>Drop us a line!</h4>
+          <h3 class="contactUsHeading">Drop us a line!</h3>
           <p>
             Do you want to hire us and the C'est Cheese on the go trailer for
             your next event? contact us here
