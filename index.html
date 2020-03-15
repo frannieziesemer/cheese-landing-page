@@ -10,6 +10,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src\images\style.css" />
     <title>C'est Cheese</title>
   </head>
@@ -78,9 +79,9 @@
             src="src\images\cestcheese black background.PNG"
             alt="c'est cheese logo"
           />
-          <h1 class="tagline">
-            C'est Cheese, French for `it is cheese` [ c'est - pronounced say ]
-          </h1>
+          <h2 class="tagline">
+               c'est [ pronounced say ] - French for `it is`
+          </h2>
 
           <!-- <nav class="navbar fixed-top navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
@@ -98,60 +99,63 @@
 
     <div class="container-fluid">
       <div id="about" class="row">
-        <div class="col-12">
-          <h2 class="text-center">
+        <div class="col-sm-3">
+          <img
+            src="src\images\cheeseboardVertical.PNG"
+            alt="cheese board"
+            class="marginPhoto img-fluid mx-auto"
+          />
+        </div>
+
+        <div class="col-sm-9">
+          <h1 class="description">
             We are a food trailer based in Western Queensland, specialising in
             gourmet cheese from Australia and around the world
-          </h2>
-        </div>
-        <div class="col-md-4">
-          <img
-            src="src\images\raclette.jpg"
-            alt="melted raclette cheese"
-            class="img-fluid aboutSectionPhotos"
-          />
-          <h3>Raclette</h3>
-          <p>
-            Next level grilled cheese , just how the Swiss do it!
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img
-            src="src\images\cheese.png"
-            alt="two types of cheese"
-            class="img-fluid aboutSectionPhotos"
-          />
-          <h3>Fresh cheese</h3>
-          <p>
-            Many types of fresh Australian and international cheese, the perfect
-            way to end the week with a glass of bubbles
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img
-            src="src\images\cheeseboard.png"
-            alt="cheese board"
-            class="img-fluid aboutSectionPhotos"
-          />
-          <h3>And more..</h3>
-          <p>
-            Local olives, quince paste, French crips and more to pair perfectly
-            with cheese
-          </p>
+          </h1>
+          <div class="row">
+            <div class="col-sm-6">
+              <img
+                src="src\images\cheese.png"
+                alt="two types of cheese"
+                class="img-fluid photoAboutSection"
+              />
+
+              <img
+                src="src\images\raclette.jpg"
+                alt="melted raclette cheese"
+                class="img-fluid photoAboutSection"
+              />
+            </div>
+            <div class="col-sm-6">
+
+            <p class="textAbout">
+              In our little van, you can find types of <span class="textHighlight">fresh</span> Australian
+              and international <span class="textHighlight">cheese</span>,  Next level
+              grilled <span class="textHighlight">raclette </span>cheese, just
+              how the Swiss do it! Local olives, quince paste, French crisps
+              <span class="textHighlight">and more </span> to pair perfectly
+              with cheese
+            </p>
+            <p>
+              ...the perfect way to end the week! 
+            </p>
+            <h5 class="textFindUs">
+              Find us at Thomas Jack Park, Dalby QLD from 3pm most Fridays
+            </h5>
+            
+          </div>
         </div>
       </div>
-      <h5 class="centeredText">
-        Find us at Thomas Jack Park, Dalby QLD from 3pm most Fridays
-      </h5>
-      <div class="row aboutTed">
+
+      <!-- <div class="row aboutTed">
         <div class="col-md-6 rounded">
           <img
             src="src\images\ted.PNG"
             alt="woman serving customers cheese from the van"
-            class="img-fluid vanWithCustomers"
+            class="img-fluid photoVanCustomers"
           />
         </div>
-        <div class="col-md-6 paragraphAboutTed">
+        <div class="col-md-6 textAbout">
           <p>
             I am Teddie Ziesemer, pharmacist by trade, cheese lover by nature!
           </p>
@@ -161,16 +165,15 @@
             the bush.
           </p>
         </div>
-      </div>
+      </div> -->
       <div id="events" class="row">
-        <div class="col-md-6 text-right ">
+        <div class="col-md-6">
           <h3 class="eventsTextHeading">
-            We also do events, markets and private functions
+            Events, markets and private functions 
           </h3>
-          <p>
-            C'est Cheese is on wheels and ready to come to you wherever you may
-            be.
-          </p>
+          <p class="textEvents"> C'est Cheese is on wheels and ready to come to you wherever you may
+            be.</p>
+        
         </div>
         <div class="col-md-6">
           <img
